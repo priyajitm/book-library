@@ -1,0 +1,25 @@
+{
+  "name": "book-library",
+  "version": "1.0.0",
+  "description": "A Books Library",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\" "
+  },
+  "author": "Priyajit Mukherjee",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^7.4.0",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.5.3",
+    "nodemon": "^2.0.19",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}
